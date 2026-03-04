@@ -138,11 +138,16 @@ async function htmlToMarkdown(html, baseUrl) {
   // re-attach them after extraction by matching code text prefixes.
   const langHints = collectCodeLangHints(dom.window.document);
 
+  const directContentHtml = pickDirectContentHtml(dom.window.document);
   const reader = new Readability(dom.window.document);
   const article = reader.parse();
 
   const title = article?.title || dom.window.document.title || '';
-  const contentHtml = article?.content || dom.window.document.body?.innerHTML || '';
+  const contentHtml =
+    directContentHtml ||
+    article?.content ||
+    dom.window.document.body?.innerHTML ||
+    '';
 
   // Re-attach language hints (best-effort).
   const contentDom = new JSDOM(contentHtml, { url: baseUrl });
@@ -311,6 +316,27 @@ function applyDefaultLangToFences(md, lang) {
   }
 
   return lines.join('\n');
+}
+
+function pickDirectContentHtml(doc) {
+  const selectors = [
+    'article .available-content .body.markup', // Substack article body
+    'article .available-content .body',
+    'article .body.markup',
+  ];
+
+  for (const sel of selectors) {
+    const node = doc.querySelector(sel);
+    if (!node) continue;
+
+    const text = (node.textContent || '').replace(/\s+/g, ' ').trim();
+    // Avoid grabbing tiny fragments (e.g. bylines or promo blocks).
+    if (text.length < 300) continue;
+
+    return node.innerHTML || '';
+  }
+
+  return null;
 }
 
 function normalizeLangHint(lang) {
