@@ -20,8 +20,8 @@ After setup, the human can:
 
 ## Built-in scripts in this repo
 
-- `scripts/add-url.mjs` — fetch → extract → HTML→Markdown → write `source.md` + `meta.json` + translation prompt
-- `scripts/apply-translation.mjs` — write `<lang>.md` from translated Markdown (from stdin or file)
+- `scripts/add-url.mjs` — fetch → extract → HTML→Markdown → write `source.md` + `meta.json` + refined pipeline files
+- `scripts/apply-translation.mjs` — apply translated Markdown by stage (`draft` / `final`)
 - `scripts/run-crab.sh` — wrapper for `add-url.mjs`
 - `scripts/sync-upstream.sh` — sync template updates into a fork
 
@@ -83,24 +83,24 @@ warn the human and ask for confirmation before running.
 On `URL + crab`:
 
 ```bash
-# Generate source.md + meta.json + prompt file
-./scripts/run-crab.sh <url> --lang zh
+# Generate source/meta/profile/prompt files (auto mode = refined publish flow)
+./scripts/run-crab.sh <url> --lang zh --mode auto
 ```
 
-`add-url.mjs` prints a JSON summary including the `slug` and `promptPath`.
+`add-url.mjs` prints a JSON summary including `slug`, `promptPath`, and `translationProfile`.
 
 Then:
 
 1) Read the prompt file and translate it **yourself** in the running OpenClaw conversation.
    - Do not ask the user to do this step.
-2) Write the translated Markdown into the repo (temp file is fine), then apply it:
+2) Apply in two stages:
 
 ```bash
-# Option A: pipe via stdin
-cat /path/to/translated.md | node scripts/apply-translation.mjs <slug> --lang zh
+# draft stage
+node scripts/apply-translation.mjs <slug> --lang zh --in /path/to/translated.zh.md --stage draft
 
-# Option B: from a file
-node scripts/apply-translation.mjs <slug> --lang zh --in /path/to/translated.md
+# final stage
+node scripts/apply-translation.mjs <slug> --lang zh --in /path/to/translated.zh.final.md --stage final
 ```
 
 Finally, commit + push to `main`, **verify the deployed URL returns HTTP 200**, and reply with the deployed page URL.

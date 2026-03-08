@@ -139,8 +139,8 @@ This repo ships an optional starter skill under `skills/transcrab/`.
 
 This template already includes scripts you can call:
 
-- `scripts/add-url.mjs`: fetch → extract → HTML→Markdown → write `source.md` + `meta.json` + translation prompt
-- `scripts/apply-translation.mjs`: write `<lang>.md` from translated Markdown (from stdin or file)
+- `scripts/add-url.mjs`: fetch → extract → HTML→Markdown → write `source.md` + `meta.json` + translation pipeline files
+- `scripts/apply-translation.mjs`: apply translated Markdown by stage (`draft` / `final`)
 - `scripts/run-crab.sh`: thin wrapper around `add-url.mjs`
 - `scripts/sync-upstream.sh`: keep a fork up to date with template changes
 
@@ -151,9 +151,10 @@ Before running automation on a user’s machine, you should quickly read the scr
 - Skim `scripts/add-url.mjs` to understand:
   - it performs network fetches to the target URL
   - it writes files under `content/articles/**`
-  - it **does not** run model calls by itself (it only generates a translation prompt)
+  - it **does not** run model calls by itself (it generates pipeline artifacts + prompt files)
 - Skim `scripts/apply-translation.mjs` to understand:
-  - it writes `<lang>.md` under the article directory
+  - `--stage draft`: writes `03-draft.md` (+ `04-critique.md` in refined flow)
+  - `--stage final`: writes `<lang>.md` (+ `05-revision.md` in refined flow)
 - If you see anything that looks risky or unexpected (running arbitrary shell commands, touching unrelated paths, etc.),
   **warn the user and ask for confirmation**.
 
@@ -171,13 +172,25 @@ Why? Calling `openclaw agent` from inside a script can cause nested/recursive ag
 
 Instead:
 
-- `scripts/add-url.mjs` generates a strict translation prompt and writes it to:
-  - `content/articles/<slug>/translate.<lang>.prompt.txt`
-- The running OpenClaw assistant translates that prompt in the current conversation (using the user’s default model/provider).
-- `scripts/apply-translation.mjs` writes the translated markdown to:
-  - `content/articles/<slug>/<lang>.md`
+- `scripts/add-url.mjs` generates pipeline files and prompt files under the article directory.
+  - In `mode=auto` (default), publish flow is fixed to `refined`.
+  - It auto-detects topic (`technology` / `business` / `life`) and chooses style/audience accordingly.
+- The running OpenClaw assistant translates in conversation (using the user’s default model/provider).
+- `scripts/apply-translation.mjs` executes the closing loop:
+  - `--stage draft` → `03-draft.md` (+ `04-critique.md`)
+  - `--stage final` → `<lang>.md` (+ `05-revision.md`)
 
 This keeps the UX stable and avoids deadlocks.
+
+Recommended apply commands:
+
+```bash
+# 1) draft stage: save first-pass translation and auto-generate critique scaffold
+node scripts/apply-translation.mjs <slug> --lang zh --in /tmp/translated.zh.md --stage draft
+
+# 2) final stage: publish zh.md and revision notes
+node scripts/apply-translation.mjs <slug> --lang zh --in /tmp/translated.zh.final.md --stage final
+```
 
 ### 6) Output format
 
@@ -185,10 +198,16 @@ On `URL + crab`, write under `content/articles/<slug>/`:
 
 - `source.md`
 - `meta.json`
-- `translate.<lang>.prompt.txt`
+- `translation.profile.json`
+- `01-analysis.md`
+- `02-prompt.md`
+- `translate.<lang>.prompt.txt` (compatibility copy)
 
-After the assistant translates, write:
+In refined publish flow (default):
 
+- `03-draft.md`
+- `04-critique.md`
+- `05-revision.md`
 - `<lang>.md` (e.g. `zh.md`)
 
 Then commit + push to `main` and reply with the deployed page URL.
