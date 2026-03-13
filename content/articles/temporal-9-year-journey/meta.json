@@ -1,0 +1,17 @@
+{
+  "slug": "temporal-9-year-journey",
+  "title": "Temporal: The 9-Year Journey to Fix Time in JavaScript",
+  "date": "2026-03-11T00:00:00.000Z",
+  "sourceUrl": "https://bloomberg.github.io/js-blog/post/temporal/",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "tech",
+    "style": "tech",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}

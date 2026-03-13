@@ -1,0 +1,17 @@
+{
+  "slug": "stop-overthinking-ai-subscriptions",
+  "title": "Stop Overthinking AI Subscriptions",
+  "date": "2026-03-13T03:08:00.000Z",
+  "sourceUrl": "https://steipete.me/posts/2025/stop-overthinking-ai-subscriptions",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "tech",
+    "style": "tech",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}
