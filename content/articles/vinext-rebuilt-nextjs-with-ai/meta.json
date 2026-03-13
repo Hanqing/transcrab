@@ -1,0 +1,17 @@
+{
+  "slug": "vinext-rebuilt-nextjs-with-ai",
+  "title": "How we rebuilt Next.js with AI in one week",
+  "date": "2026-02-24T00:00:00.000Z",
+  "sourceUrl": "https://blog.cloudflare.com/vinext/",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "tech",
+    "style": "tech",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}
