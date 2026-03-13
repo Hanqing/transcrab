@@ -1,0 +1,17 @@
+{
+  "slug": "android-bench-methodology",
+  "title": "Android Bench methodology",
+  "date": "2026-03-05T19:49:49.000Z",
+  "sourceUrl": "https://developer.android.com/bench/methodology",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "tech",
+    "style": "tech",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}
