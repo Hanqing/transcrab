@@ -1,0 +1,17 @@
+{
+  "slug": "physics-of-poo",
+  "title": "Physics of poo: Why it takes you and an elephant the same amount of time",
+  "date": "2026-03-13T03:43:00.000Z",
+  "sourceUrl": "https://theconversation.com/physics-of-poo-why-it-takes-you-and-an-elephant-the-same-amount-of-time-76696",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "science",
+    "style": "popular",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}
