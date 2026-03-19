@@ -15,10 +15,11 @@ if (!article) {
   return new Response('Not found', { status: 404 });
 }
 const { html, title, sourceUrl, dateDisplay } = article;
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Base title={title}>
-  <div class="nav"><a href="/">← 返回</a></div>
+  <div class="nav"><a href={baseUrl}>← 返回</a></div>
   <h1>{title}</h1>
   <div class="meta">
     {dateDisplay ? <span>{dateDisplay}</span> : null}
