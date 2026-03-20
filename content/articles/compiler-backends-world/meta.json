@@ -1,0 +1,17 @@
+{
+  "slug": "compiler-backends-world",
+  "title": "The world of compiler backends",
+  "date": "2026-03-20T03:00:00.000Z",
+  "sourceUrl": "https://medium.com/packt-hub/the-world-of-compiler-backends-9b27a3e37866",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "technical",
+    "style": "technical",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined"
+  }
+}
