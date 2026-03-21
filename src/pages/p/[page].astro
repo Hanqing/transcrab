@@ -45,7 +45,6 @@ const categories = [...categoryMap.values()].sort((a, b) => b.count - a.count ||
       <a href={`${currentPath}?cat=${encodeURIComponent(c.slug)}`} data-cat={c.slug}>{c.name} ({c.count})</a>
     ))}
   </div>
-  <p class="meta" data-filter-summary>当前显示：全部</p>
 
   {list.length === 0 ? <p>暂无文章。</p> : null}
 
@@ -81,10 +80,8 @@ const categories = [...categoryMap.values()].sort((a, b) => b.count - a.count ||
       const selected = params.get('cat') || 'all';
       const rows = [...document.querySelectorAll('[data-article-item]')];
       const tabs = [...document.querySelectorAll('[data-category-tabs] a[data-cat]')];
-      const summary = document.querySelector('[data-filter-summary]');
       const empty = document.querySelector('[data-empty-state]');
       const nav = document.querySelector('[data-page-nav]');
-      const tabMap = new Map(tabs.map((t) => [t.dataset.cat || 'all', t]));
 
       let visibleCount = 0;
       for (const row of rows) {
@@ -95,11 +92,6 @@ const categories = [...categoryMap.values()].sort((a, b) => b.count - a.count ||
 
       for (const tab of tabs) {
         if ((tab.dataset.cat || 'all') === selected) tab.classList.add('active');
-      }
-
-      if (summary) {
-        const activeText = tabMap.get(selected)?.textContent?.replace(/\(\d+\)\s*$/, '').trim() || '全部';
-        summary.textContent = `当前显示：${activeText}（本页 ${visibleCount} 篇）`;
       }
 
       if (empty) empty.style.display = visibleCount > 0 ? 'none' : '';
