@@ -1,0 +1,77 @@
+{
+  "profile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "conversational",
+    "chunkThreshold": 4000,
+    "chunkMaxWords": 5000,
+    "glossary": []
+  },
+  "configuredProfile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "storytelling",
+    "chunkThreshold": 4000,
+    "chunkMaxWords": 5000,
+    "glossary": []
+  },
+  "autoProfile": {
+    "requestedMode": "auto",
+    "topic": "life",
+    "confidence": 0.76,
+    "resolved": {
+      "mode": "refined",
+      "style": "conversational",
+      "audience": "general",
+      "chunkThreshold": 4000,
+      "chunkMaxWords": 5000,
+      "glossary": []
+    },
+    "metrics": {
+      "words": 2405,
+      "codeBlocks": 0,
+      "tableRows": 0,
+      "headings": 8,
+      "links": 19,
+      "businessHits": 0,
+      "lifeHits": 3,
+      "isLong": false,
+      "isVeryLong": false,
+      "isTechnical": false
+    },
+    "reasons": [
+      "公开发布默认使用 refined 流程，优先质量与稳定性",
+      "生活叙事关键词命中较高，判定为 life"
+    ]
+  },
+  "steps": [
+    "auto-analyze",
+    "translate"
+  ],
+  "executionMode": "refined",
+  "executionSteps": [
+    "analyze",
+    "translate",
+    "review",
+    "revise"
+  ],
+  "artifacts": {
+    "analysis": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/01-analysis.md",
+    "assembledPrompt": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/02-prompt.md",
+    "draft": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/03-draft.md",
+    "critique": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/04-critique.md",
+    "revision": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/05-revision.md",
+    "final": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/translation.md"
+  },
+  "promptPath": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/translate.prompt.txt",
+  "promptCompatPath": "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/translate.zh.prompt.txt",
+  "createdFiles": [
+    "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/02-prompt.md",
+    "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/01-analysis.md",
+    "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/03-draft.md",
+    "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/04-critique.md",
+    "/Users/hanqing/Codex/transcrab/content/articles/my-ai-adoption-journey/05-revision.md"
+  ],
+  "configPath": "/Users/hanqing/Codex/transcrab/transcrab.translate.config.json",
+  "loadedFromFile": true
+}
