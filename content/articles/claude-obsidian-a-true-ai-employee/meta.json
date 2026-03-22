@@ -1,0 +1,54 @@
+{
+  "slug": "claude-obsidian-a-true-ai-employee",
+  "title": "Claude + Obsidian = A true AI employee",
+  "date": "2026-03-22T00:19:07.784Z",
+  "sourceUrl": "https://x.com/sourfraser/status/2035454870204100810?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "conversational",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "life",
+      "confidence": 0.76,
+      "resolved": {
+        "mode": "refined",
+        "style": "conversational",
+        "audience": "general",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 1720,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 5,
+        "links": 0,
+        "businessHits": 1,
+        "lifeHits": 4,
+        "isLong": false,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "生活叙事关键词命中较高，判定为 life"
+      ]
+    }
+  },
+  "category": "生活",
+  "categoryClassification": {
+    "category": "生活",
+    "categorySlug": "生活",
+    "matchedExisting": true,
+    "score": 0.5253,
+    "reason": "matched-existing(count=5)"
+  }
+}
