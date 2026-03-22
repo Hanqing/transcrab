@@ -1,0 +1,54 @@
+{
+  "slug": "lessons-from-building-claude-code-prompt-caching-is-everything",
+  "title": "Lessons from Building Claude Code: Prompt Caching Is Everything",
+  "date": "2026-03-22T12:41:22.935Z",
+  "sourceUrl": "https://x.com/trq212/status/2024574133011673516?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "conversational",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "life",
+      "confidence": 0.76,
+      "resolved": {
+        "mode": "refined",
+        "style": "conversational",
+        "audience": "general",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 1292,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 6,
+        "links": 3,
+        "businessHits": 0,
+        "lifeHits": 2,
+        "isLong": false,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "生活叙事关键词命中较高，判定为 life"
+      ]
+    }
+  },
+  "category": "生活",
+  "categoryClassification": {
+    "category": "生活",
+    "categorySlug": "生活",
+    "matchedExisting": true,
+    "score": 0.4005,
+    "reason": "matched-existing(count=7)"
+  }
+}
