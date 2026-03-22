@@ -1,0 +1,55 @@
+{
+  "slug": "a-framework-for-what-comes-next",
+  "title": "A Framework for What Comes Next",
+  "date": "2026-03-22T15:15:16.134Z",
+  "sourceUrl": "https://x.com/radigancarter/status/2035073252134129757?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "business",
+    "style": "business",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "business",
+      "confidence": 0.78,
+      "resolved": {
+        "mode": "refined",
+        "style": "business",
+        "audience": "business",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 4322,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 8,
+        "links": 4,
+        "businessHits": 7,
+        "lifeHits": 4,
+        "isLong": true,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "商业关键词命中较高，判定为 business",
+        "篇幅较长，refined 可降低术语漂移与结构风险"
+      ]
+    }
+  },
+  "category": "商业",
+  "categoryClassification": {
+    "category": "商业",
+    "categorySlug": "商业",
+    "matchedExisting": true,
+    "score": 0.2442,
+    "reason": "matched-existing(count=4)"
+  }
+}
