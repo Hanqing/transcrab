@@ -1,0 +1,35 @@
+你是一个翻译助手。请把下面的 Markdown 内容翻译成简体中文。
+[TransCrab Translation Profile]
+- mode: auto
+- audience: business
+- style: business
+- auto-resolved-mode: refined
+- auto-resolved-audience: business
+- auto-resolved-style: business
+- auto-reasons: 公开发布默认使用 refined 流程，优先质量与稳定性；商业关键词命中较高，判定为 business
+- pipeline: analyze -> translate -> review -> revise
+- 执行策略：自动判断（auto）。
+- 发布流程固定按 refined 质量标准执行。
+- 你需要根据主题（technology/business/life）自动选择最合适的翻译风格与语气。
+要求：
+- 保留 Markdown 结构（标题/列表/引用/表格/链接）。
+- 代码块、命令、URL、文件路径保持原样，不要翻译。
+- **必须同时翻译标题**：请先输出一行 Markdown 一级标题（以 "# " 开头），作为译文标题。
+- 然后空一行，再输出译文正文（不要再重复标题）。
+- 只输出翻译结果本身，不要附加解释、不要加前后缀。
+---
+I am at a stage in life where my main objective is to pass along to others the principles I have learned over the last 60 years that have helped me and that I think can help others. I believe that some of the most important investment principles I can pass along are about what an “All Weather Portfolio” is and how to build such a portfolio. I think these principles are especially valuable during risky times like now.
+
+To me, *the most important thing for most investors to have is a portfolio that is a) well diversified/engineered so that it delivers the highest possible return with the least amount of risk and b) does not require market timing. That is because a) while most people think the safest investment is cash (e.g., short-term government debt or nearly default-free analogous interest-bearing deposits like high quality money market funds) because it won't default, those cash investments will certainly give the lowest after-tax returns over time, and they will be especially bad—i.e., lose a lot of purchasing power—in periods of high inflation. It is also true that b) almost all investors (including most well-established professional investors) cannot time the market effectively even when they think they can. For that reason, I believe that for most investors managing their own portfolios, investing should be done with little or no market timing.
+
+*An All Weather portfolio is a passively held mix of investments that is expected to have a return that is much higher than the return on low-risk assets like cash but with much less risk than higher-risk assets like stocks and bonds, in any environment. This is unlike most portfolios, such as the 60/40 stock/bond mix or investments that do well when times are good and badly when times are bad. So, to be clear, an All Weather portfolio is a type of portfolio that achieves that; it is not an investment product. It is more like a financial engineering challenge to achieve that balance, which can produce investment products. My All Weather Portfolio has been built my way, which I will describe in brief here and more comprehensively later. Naturally, my approach has evolved and improved over time, and I have some ideas for how to make it better still. But anyone can engineer their own way of achieving it—maybe I should have a contest to build the best approach.
+
+I will start by telling you about how I came up with my approach and how it works.
+
+About 30 years ago, I was trying to create a strategy that my family could use to invest without my guidance after I was gone. I believed that I needed a portfolio that a) would deliver a significantly higher return than cash (i.e., equal to or above the classic 60/40 stock and bond portfolio), b) would have less risk than the 60/40 mix, c) would not be exposed to doing badly in any particular type of economic environment, and d) would not require market timing.
+
+As I saw it, the only way I could get this All Weather portfolio was by holding diversifying higher-returning, higher-risk investments that together would have the same higher returns with lower risk than any of them would have individually because of how these asset classes would diversify each other. To get that better diversification, I came up with the concept of “risk parity,” which means taking investments of different risks (i.e., different volatilities) and getting them to have similar risks by increasing the risk/volatility of the low-risk/low-volatility investments and decreasing the risk/volatility of high-risk/high-volatility investments so that they would balance each other better. I then balanced my exposures to each asset class based on the most fundamental drivers of its returns. In other words, by knowing how each asset class responds to changing economic conditions like inflation and growth (e.g., bonds do badly when inflation and growth rise while inflation-hedge assets like gold, inflation-indexed bonds, and commodities do well) and having equal amounts of risk in rising and falling inflation and growth environments, I could create a passive strategic allocation mix that would be well balanced for all economic scenarios. Thirty years later, I still believe that having this core strategic mix is essential. My All Weather Portfolio is my ideal strategic asset allocation mix of “betas” (asset classes) that I constantly hold. While I take a lot of tactical bets based on what I think is going to do well and poorly to create “alpha,” those are done by creating a well-diversified portfolio of alphas that I call my “Pure Alpha” approach. (I won’t explain that approach now as it would be too long a digression.)
+
+I built out this All Weather approach with my great Bridgewater team, especially with Bob Prince and Greg Jensen, who have been at Bridgewater for 40 and 30 years, respectively, and are still co- Chief Investment Officers there. After we built it, I saw that it was straightforward enough that practically anyone could implement it, and I couldn’t imagine we would be paid for managing others' money to do it. So, I showed just about everyone I knew how to do it (which is something I still want to do) and was surprised when many clients asked us to manage money in that strategy. We launched it as a product, and, naturally, it has evolved and improved since then. Bridgewater is now doing it in their own ways and evolving it to make it better, and I’m also doing it my own way and evolving it to make it better. The difference between us is that they are managing All Weather accounts for others, and I’m doing it just for my family and my family’s foundation and showing others how to do it.
+
+Whether investors build their All Weather portfolios themselves or have someone else do it for them, what I most want is for people to understand how it works and have the opportunity to apply it so that they can be confident they can have good returns without being exposed to unacceptably bad performance in what most people think are bad market/economic environments. I have written a lot about how I make my All Weather portfolio mix, and I have distributed that widely. (For example, if you want a complete course about my investment principles, you can get it here <[WMI Online Course](https://wmi.edu.sg/dmp-online-international/)> through an online course I built with Singapore’s Wealth Management Institute).  In any case, I will soon write up my “recipe” that will make clearer how you can build your own All Weather portfolio, and I will pass it along when I get a chance.

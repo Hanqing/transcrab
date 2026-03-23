@@ -1,0 +1,54 @@
+{
+  "slug": "the-concept-and-mechanics-of-an-all-weather-portfolio",
+  "title": "The Concept and Mechanics of an All Weather Portfolio",
+  "date": "2026-03-23T16:17:32.445Z",
+  "sourceUrl": "https://x.com/RayDalio/status/2036094771144405319?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "business",
+    "style": "business",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "business",
+      "confidence": 0.78,
+      "resolved": {
+        "mode": "refined",
+        "style": "business",
+        "audience": "business",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 1109,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 0,
+        "links": 1,
+        "businessHits": 4,
+        "lifeHits": 2,
+        "isLong": false,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "商业关键词命中较高，判定为 business"
+      ]
+    }
+  },
+  "category": "商业",
+  "categoryClassification": {
+    "category": "商业",
+    "categorySlug": "商业",
+    "matchedExisting": true,
+    "score": 0.1755,
+    "reason": "fallback-topic(business)"
+  }
+}
