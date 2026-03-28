@@ -1,0 +1,55 @@
+{
+  "slug": "living-with-an-ai-agent-my-full-setup-after-2-months",
+  "title": "Living With an AI agent - My Full Setup After 2 Months",
+  "date": "2026-03-28T10:13:33.949Z",
+  "sourceUrl": "https://x.com/witcheer/status/2037528582298194123?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "business",
+    "style": "business",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "business",
+      "confidence": 0.78,
+      "resolved": {
+        "mode": "refined",
+        "style": "business",
+        "audience": "business",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 4580,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 11,
+        "links": 0,
+        "businessHits": 3,
+        "lifeHits": 3,
+        "isLong": true,
+        "isVeryLong": true,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "商业关键词命中较高，判定为 business",
+        "篇幅较长，refined 可降低术语漂移与结构风险"
+      ]
+    }
+  },
+  "category": "生活",
+  "categoryClassification": {
+    "category": "生活",
+    "categorySlug": "生活",
+    "matchedExisting": true,
+    "score": 0.5229,
+    "reason": "matched-existing(count=10)"
+  }
+}
