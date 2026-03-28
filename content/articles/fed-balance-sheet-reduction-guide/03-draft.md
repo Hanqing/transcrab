@@ -1,10 +1,5 @@
----
-title: 美联储缩减资产负债表用户指南
-date: '2026-03-28T12:04:00.000Z'
-sourceUrl: 'https://www.federalreserve.gov/econres/feds/files/2026019pap.pdf'
-lang: zh
-category: 技术
----
+# 美联储缩减资产负债表用户指南
+
 **作者**：Alyssa G. Anderson, Alessandro Barbarino, Anthony M. Diercks, Stephen Miran
 
 **日期**：2026 年 3 月
