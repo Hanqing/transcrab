@@ -1,0 +1,10 @@
+{
+  "category": "技术",
+  "categoryClassification": {
+    "category": "技术",
+    "categorySlug": "技术",
+    "matchedExisting": true,
+    "score": 0.0326,
+    "reason": "fallback-topic(technology)"
+  }
+}
