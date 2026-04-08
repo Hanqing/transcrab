@@ -1,0 +1,77 @@
+{
+  "profile": {
+    "mode": "auto",
+    "audience": "business",
+    "style": "business",
+    "chunkThreshold": 4000,
+    "chunkMaxWords": 5000,
+    "glossary": []
+  },
+  "configuredProfile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "storytelling",
+    "chunkThreshold": 4000,
+    "chunkMaxWords": 5000,
+    "glossary": []
+  },
+  "autoProfile": {
+    "requestedMode": "auto",
+    "topic": "business",
+    "confidence": 0.78,
+    "resolved": {
+      "mode": "refined",
+      "style": "business",
+      "audience": "business",
+      "chunkThreshold": 4000,
+      "chunkMaxWords": 5000,
+      "glossary": []
+    },
+    "metrics": {
+      "words": 2438,
+      "codeBlocks": 0,
+      "tableRows": 0,
+      "headings": 6,
+      "links": 14,
+      "businessHits": 4,
+      "lifeHits": 2,
+      "isLong": false,
+      "isVeryLong": false,
+      "isTechnical": false
+    },
+    "reasons": [
+      "公开发布默认使用 refined 流程，优先质量与稳定性",
+      "商业关键词命中较高，判定为 business"
+    ]
+  },
+  "steps": [
+    "auto-analyze",
+    "translate"
+  ],
+  "executionMode": "refined",
+  "executionSteps": [
+    "analyze",
+    "translate",
+    "review",
+    "revise"
+  ],
+  "artifacts": {
+    "analysis": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/01-analysis.md",
+    "assembledPrompt": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/02-prompt.md",
+    "draft": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/03-draft.md",
+    "critique": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/04-critique.md",
+    "revision": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/05-revision.md",
+    "final": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/translation.md"
+  },
+  "promptPath": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/translate.prompt.txt",
+  "promptCompatPath": "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/translate.zh.prompt.txt",
+  "createdFiles": [
+    "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/02-prompt.md",
+    "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/01-analysis.md",
+    "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/03-draft.md",
+    "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/04-critique.md",
+    "/Users/hanqing/Documents/GitHub/transcrab/content/articles/thoughts-on-slowing-the-fuck-down/05-revision.md"
+  ],
+  "configPath": "/Users/hanqing/Documents/GitHub/transcrab/transcrab.translate.config.json",
+  "loadedFromFile": true
+}

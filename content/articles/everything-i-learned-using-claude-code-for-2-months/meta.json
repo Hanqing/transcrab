@@ -1,0 +1,47 @@
+{
+  "slug": "2",
+  "title": "𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 𝗜 𝗟𝗲𝗮𝗿𝗻𝗲𝗱 𝗨𝘀𝗶𝗻𝗴 𝗖𝗹𝗮𝘂𝗱𝗲 𝗖𝗼𝗱𝗲 𝗳𝗼𝗿 2 𝗠𝗼𝗻𝘁𝗵𝘀",
+  "date": "2026-03-29T10:02:17.610Z",
+  "sourceUrl": "https://x.com/Axel_bitblaze69/status/2037978621684621428?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "general",
+    "style": "conversational",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "life",
+      "confidence": 0.76,
+      "resolved": {
+        "mode": "refined",
+        "style": "conversational",
+        "audience": "general",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 4250,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 1,
+        "links": 0,
+        "businessHits": 3,
+        "lifeHits": 4,
+        "isLong": true,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "生活叙事关键词命中较高，判定为 life",
+        "篇幅较长，refined 可降低术语漂移与结构风险"
+      ]
+    }
+  }
+}

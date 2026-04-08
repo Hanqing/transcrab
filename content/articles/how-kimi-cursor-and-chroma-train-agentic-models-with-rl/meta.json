@@ -1,0 +1,54 @@
+{
+  "slug": "how-kimi-cursor-and-chroma-train-agentic-models-with-rl",
+  "title": "How Kimi, Cursor, and Chroma Train Agentic Models with RL",
+  "date": "2026-03-30T15:09:05.285Z",
+  "sourceUrl": "https://x.com/_philschmid/status/2037924497563505058?s=20",
+  "targetLang": "zh",
+  "translationProfile": {
+    "mode": "auto",
+    "audience": "business",
+    "style": "business",
+    "steps": [
+      "auto-analyze",
+      "translate"
+    ],
+    "executionMode": "refined",
+    "autoProfile": {
+      "requestedMode": "auto",
+      "topic": "business",
+      "confidence": 0.78,
+      "resolved": {
+        "mode": "refined",
+        "style": "business",
+        "audience": "business",
+        "chunkThreshold": 4000,
+        "chunkMaxWords": 5000,
+        "glossary": []
+      },
+      "metrics": {
+        "words": 2389,
+        "codeBlocks": 0,
+        "tableRows": 0,
+        "headings": 5,
+        "links": 15,
+        "businessHits": 2,
+        "lifeHits": 0,
+        "isLong": false,
+        "isVeryLong": false,
+        "isTechnical": false
+      },
+      "reasons": [
+        "公开发布默认使用 refined 流程，优先质量与稳定性",
+        "商业关键词命中较高，判定为 business"
+      ]
+    }
+  },
+  "category": "技术",
+  "categoryClassification": {
+    "category": "技术",
+    "categorySlug": "技术",
+    "matchedExisting": true,
+    "score": 0.4944,
+    "reason": "matched-existing(count=24)"
+  }
+}
